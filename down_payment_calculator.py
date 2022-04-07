@@ -21,7 +21,7 @@ if is_thereOutstandingBalance == 'yes':
     downPayment = get_carPrice * 0.2
 
     # The message with the down payment amount will be shown as a message
-    message = f"You need ${downPayment} as down payment."
+    message = f"{get_theClientName}, you need ${downPayment} as down payment."
 
 # There is no outstanding balance
 else:
@@ -30,7 +30,7 @@ else:
     downPayment = get_carPrice * 0.1
 
     # The message with the down payment amount will be shown as a message
-    message = f"You need ${downPayment} as down payment."
+    message = f"{get_theClientName}, you need ${downPayment} as down payment."
 
 # The message with the down payment will be shown to client
 print(message)
